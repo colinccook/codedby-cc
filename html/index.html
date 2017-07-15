@@ -1,8 +1,148 @@
 <html>
     <head>
         <title>Codedby.cc</title>
+        <style>
+            /* GLOBAL STYLES */           
+            body {
+                background: #333;
+                padding-top: 2em;
+                margin: 0;
+                color: #EEE;
+                font-family: sans-serif;
+                font-weight: lighter;
+            }
+
+            .typewriter-wrapper {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 2em;
+            }
+
+            /* DEMO-SPECIFIC STYLES */
+            .typewriter h1 {
+                color: #fff;
+                font-family: monospace;
+                overflow: hidden; /* Ensures the content is not revealed until the animation */
+                border-right: .15em solid orange; /* The typwriter cursor */
+                white-space: nowrap; /* Keeps the content on a single line */
+                margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+                letter-spacing: .12em; /* Adjust as needed */
+                animation: 
+                typing 2s steps(10, end),
+                blink-caret 1s step-end infinite;
+            }
+
+            /* The typing effect */
+            @keyframes typing {
+                from { width: 0 }
+                to { width: 100% }
+            }
+
+            /* The typewriter cursor effect */
+            @keyframes blink-caret {
+                from, to { border-color: transparent }
+                50% { border-color: orange }
+            }
+
+            .header {
+                background-color: #433;
+                animation: dramatic-fade-in 3.5s;
+            }
+
+            @keyframes dramatic-fade-in {
+                from { opacity: 0 }
+                to { opacity: 100% }
+                60% { opacity: 0 }
+            }
+
+            .content {
+                background-color: #343;
+                animation: dramatic-fade-in 3.7s;
+            }
+
+            .footer {
+                background-color: #334;
+                animation: dramatic-fade-in 3.9s;
+            }
+
+            .container {
+                width: 580px;
+                margin: auto;
+                padding-top: 3em;
+                padding-bottom: 3em;
+            }
+
+            .purpose {
+                font-family: 'Palatino';
+                background-color: #533;
+                font-size: 0.9em;
+                letter-spacing: 0.15em;
+            }
+
+            h2 {
+                font-weight: 100;
+            }
+
+            .dont-go-to-the-edges {
+                padding-left: 3em;
+                padding-right: 3em;
+            }
+
+            .projects {
+                background-color: #353;
+            }
+
+            .social-media {
+                background-color: #335;
+                text-align: center;
+            }
+
+            .copyright {
+                background-color: #444;
+                text-align: center;
+                animation: dramatic-fade-in 4.1s;
+            }
+
+            .cool-link {
+                background-color: #999;
+                padding-left: 0.5em;
+                padding-right: 3em;
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+
+        </style>
     </head>
     <body>
-        <h1>Codedby.cc</h1>
+        <div class="typewriter-wrapper">
+            <div class="typewriter">
+                <h1>CodedBy.cc</h1>
+            </div>
+        </div>
+        <div class="header">
+            <div class="purpose container generic-container-padding">
+                <div class="dont-go-to-the-edges">
+                    <h2>A use-at-your-own-risk collection of throw-away projects created by Colin Cook</h2>
+                    <h2> - Colin Cook</h2>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="projects container">
+                <a class="cool-link" href="https://www.codedby.cc">Flapper News Continued</a>
+                <p>That's what I've come to love about you.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="social-media container">
+                <div>I don't use social media much but I'd be glad to be friends!</div>
+                <div>GitHub - LinkedIn - Twitter</div>
+            </div>
+        </div>
+        <div>
+            <div class="copyright container">
+                <span>Copyright 2017 - Colin Cook</span>
+            </div>
+        </div>
     </body>
 </html>
