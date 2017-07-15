@@ -7,7 +7,7 @@
                 background: #333;
                 padding-top: 2em;
                 margin: 0;
-                color: #EEE;
+                color: rgba(255,255,255,.9);
                 font-family: sans-serif;
                 font-weight: lighter;
             }
@@ -45,7 +45,15 @@
             }
 
             .header {
-                background-color: #433;
+                /* From http://lea.verou.me/css3patterns/ */
+                /* Playing with CSS */
+                background-color:#269;
+                background-image: linear-gradient(rgba(255,255,255,.05) 2px, transparent 2px),
+                    linear-gradient(90deg, rgba(255,255,255,.05) 2px, transparent 2px),
+                    linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+                background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+                background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
                 animation: dramatic-fade-in 3.5s;
             }
 
@@ -79,7 +87,7 @@
                 letter-spacing: 0.15em;
             }
 
-            h2 {
+            h2, h3 {
                 font-weight: 100;
             }
 
@@ -93,14 +101,16 @@
             }
 
             .social-media {
-                background-color: #335;
                 text-align: center;
+                background-color: #335;
+                border-radius: 2em 2em 0 0;
             }
 
             .copyright {
                 background-color: #444;
                 text-align: center;
                 animation: dramatic-fade-in 4.1s;
+                border-radius: 0 0 2em 2em;
             }
 
             .cool-link {
@@ -109,6 +119,13 @@
                 padding-right: 3em;
                 padding-top: 1em;
                 padding-bottom: 1em;
+            }
+
+            .cc {
+                background-color: purple;
+                color: white;
+                padding: 1em;
+                margin: 1em;
             }
 
         </style>
@@ -120,28 +137,40 @@
             </div>
         </div>
         <div class="header">
-            <div class="purpose container generic-container-padding">
+            <div class="container generic-container-padding">
                 <div class="dont-go-to-the-edges">
-                    <h2>A use-at-your-own-risk collection of throw-away projects created by Colin Cook</h2>
-                    <h2> - Colin Cook</h2>
+                    <h2>Welcome to my collection of throw-away learnings.</h2>
+                    <h3>This page acts as an index the various prototypes I am working on. You are encouraged to have a read through and try out what I've made.</h3>
                 </div>
             </div>
         </div>
+        <!--
         <div class="content">
-            <div class="projects container">
+            <div class="container">
                 <a class="cool-link" href="https://www.codedby.cc">Flapper News Continued</a>
-                <p>That's what I've come to love about you.</p>
             </div>
         </div>
+        -->
         <div class="footer">
+            <div class="in-brief container">
+                <div class="dont-go-to-the-edges">
+                    <p>My name is Colin Cook and I live in the fine city of Norwich, UK.</p>
+                    <p>I consider myself a .NET enterprise developer, having worked 9 years in the industry at various mid-sized companies. I'm very proudly employed at Flagship Housing Group.</p>
+                    <p>A current focus of mine is to branch out to alternative technologies and improve my developer soft skills.</p>
+                </div>
+            </div>
             <div class="social-media container">
-                <div>I don't use social media much but I'd be glad to be friends!</div>
-                <div>GitHub - LinkedIn - Twitter</div>
+                <div class="dont-go-to-the-edges">
+                    <span>LinkedIn - Github</span>
+                </div>
             </div>
         </div>
         <div>
             <div class="copyright container">
-                <span>Copyright 2017 - Colin Cook</span>
+                <div>
+                    <span>Copyright 2017 Colin Cook</span>
+                </div>
+                <!-- <span class="cc">CC</span> -->
             </div>
         </div>
     </body>
